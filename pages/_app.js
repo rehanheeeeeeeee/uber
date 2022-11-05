@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import "mapbox-gl/dist/mapbox-gl.css";
+import AppLayout from "../Layouts/AppLayout";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <AppLayout>
+      <Component {...pageProps} />
+    </AppLayout>
+  );
 }
 
-export default MyApp
+export default MyApp;

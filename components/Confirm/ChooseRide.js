@@ -12,7 +12,8 @@ export default function ChooseRide({ pickUp, dropOff }) {
   const [rideDuration, setRideDuration] = useState(0);
   useEffect(() => {
     fetch(
-      `https://api.mapbox.com/directions/v5/mapbox/driving/${pickUp[0]},${pickUp[1]};${dropOff[0]},${dropOff[1]}?access_token=${process.env.ACCESS_TOKEN}`
+      `https://api.mapbox.com/directions/v5/mapbox/driving/${pickUp[0]},${pickUp[1]};${dropOff[0]},${dropOff[1]}?access_token=pk.eyJ1IjoicmVoYW50b3NpZiIsImEiOiJjbGEycjloZzkwajg2M3Bxdm1rM2diNHlqIn0.SrZTiiNtWGhlAVHKqLQIiA
+      `
     )
       .then((res) => res.json())
       .then((data) => {

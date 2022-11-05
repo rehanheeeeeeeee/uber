@@ -7,7 +7,8 @@ import Map from "../components/Home/Map";
 import { auth } from "../firebase";
 import { useRouter } from "next/router";
 
-mapboxgl.accessToken = process.env.ACCESS_TOKEN;
+mapboxgl.accessToken =
+  "pk.eyJ1IjoicmVoYW50b3NpZiIsImEiOiJjbGEycjloZzkwajg2M3Bxdm1rM2diNHlqIn0.SrZTiiNtWGhlAVHKqLQIiA";
 
 export default function Home() {
   const router = useRouter();

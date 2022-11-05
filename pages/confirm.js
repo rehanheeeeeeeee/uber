@@ -37,7 +37,8 @@ export default function Confirm({ pickUpLocation, dropOffLocation }) {
     fetch(
       `https://api.mapbox.com/geocoding/v5/mapbox.places/${location}.json?` +
         new URLSearchParams({
-          accessToken: process.env.ACCESS_TOKEN,
+          access_token:
+            "pk.eyJ1IjoicmVoYW50b3NpZiIsImEiOiJjbGEycjloZzkwajg2M3Bxdm1rM2diNHlqIn0.SrZTiiNtWGhlAVHKqLQIiA",
           limit: 1,
         })
     )

@@ -2,7 +2,8 @@ import React from "react";
 import mapboxgl from "!mapbox-gl";
 import { useEffect } from "react";
 
-mapboxgl.accessToken = process.env.ACCESS_TOKEN;
+mapboxgl.accessToken =
+  "pk.eyJ1IjoicmVoYW50b3NpZiIsImEiOiJjbGEycjloZzkwajg2M3Bxdm1rM2diNHlqIn0.SrZTiiNtWGhlAVHKqLQIiA";
 
 const styles = {
   map: "w-full flex-1",

@@ -35,8 +35,12 @@ export default function ActionButtons() {
 
   return (
     <div className={styles.wrapper}>
-      {actionButtons.map((actionButton) => (
-        <ActionButton name={actionButton.name} image={actionButton.image} />
+      {actionButtons.map((actionButton, index) => (
+        <ActionButton
+          key={index}
+          name={actionButton.name}
+          image={actionButton.image}
+        />
       ))}
     </div>
   );

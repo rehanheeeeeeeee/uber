@@ -1,7 +1,7 @@
 import React from "react";
 
 const styles = {
-  wrapper: "flex flex-col items-center h-[100vh] bg-white w-[500px]",
+  wrapper: "flex flex-col items-center h-[100vh] bg-white w-[450px]",
 };
 export default function AppLayout({ children }) {
   return (
